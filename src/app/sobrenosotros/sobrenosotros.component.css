@@ -1,6 +1,7 @@
 .nosotros {
   display: grid;
   grid-template-rows: repeat(2, auto);
+  padding: 2rem 2rem;
 }
 
 @media (min-width: 768px) {
@@ -13,9 +14,11 @@
 }
 
 .nosotros__contenido {
-  text-align: start;
+  display: flex;
+  align-items: center;
+  text-align: center;
   line-height: 1.2;
-  padding: 0 2rem;
+  padding: 2rem 2rem;
 }
 
 @media (min-width: 768px) {
@@ -38,7 +41,8 @@
 .bloques {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem
+  gap: 2rem;
+  text-align:center;
 }
 
 @media (min-width: 768px) {
@@ -55,4 +59,9 @@
 
 .bloque__titulo {
   margin: 0;
+  padding-bottom: 1rem;
+}
+
+.bloque p{
+  font-size:1.5rem;
 }

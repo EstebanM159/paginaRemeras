@@ -12,7 +12,10 @@
   font-size: 3rem;
 }
 
-.navegacion__enlace--activo,
+nav a.active,
 .navegacion__enlace:hover {
   color: var(--secundario);
 }
+
+
+/* TESTEAR SI ANDA */
