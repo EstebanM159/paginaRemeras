@@ -1,1 +1,1 @@
-Falta arreglar el active del nav y arreglar algunas cosas de sobre nosotros
+Hacer la base de datos y pasar los datos etcetc y quizas mejorar algoo mas visual
