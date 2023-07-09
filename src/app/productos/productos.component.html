@@ -1,4 +1,4 @@
 <h1>Nuestros productos</h1>
-<div *ngfor="let prod of productos">
-  <app-producto [descripcion]="productos.descripcion" [precio]="productos.precio" class="grid contenedor" ></app-producto>
+<div *ngfor="let prod of productos" >
+  <app-producto [descripcion]="prod.descripcion" [precio]="prod.precio"  class="grid contenedor" ></app-producto>
 </div>

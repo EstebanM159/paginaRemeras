@@ -9,6 +9,8 @@ import { NavComponent } from './nav/nav.component';
 import { ProductosComponent } from './productos/productos.component';
 import { SobrenosotrosComponent } from './sobrenosotros/sobrenosotros.component';
 import { ProductoComponent } from './productos/producto/producto.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ProductoComponent } from './productos/producto/producto.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

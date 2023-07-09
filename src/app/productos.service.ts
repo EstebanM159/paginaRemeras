@@ -13,6 +13,7 @@ export class ProductosService {
 
   recuperarTodos() {
 
+
     return this.http.get(`${this.url}recuperartodos.php`);
 
   }
