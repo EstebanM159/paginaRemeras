@@ -1,10 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-producto',
   templateUrl: './producto.component.html',
   styleUrls: ['./producto.component.css']
 })
-export class ProductoComponent {
+export class ProductoComponent implements OnInit{
 
+
+  @Input() precio: number=0;
+  @Input() descripcion: string="";
+
+
+
+  constructor() { }
+
+  ngOnInit() {
+  }
 }

@@ -1,6 +1,7 @@
 .producto {
   background-color: var(--primarioOscuro);
-  padding: 1rem;
+  padding: 2rem;
+  border-radius: 2rem;
 }
 
 
@@ -11,7 +12,9 @@
 .producto__precio {
   font-size: 1.3rem;
 }
-
+.producto__imagen{
+  border-radius: 2rem;
+}
 .producto__precio,
 .producto__nombre {
   font-family: var(--fuentePrincipal);
