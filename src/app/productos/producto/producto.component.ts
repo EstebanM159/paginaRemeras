@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ProductoComponent implements OnInit{
 
-
+  @Input() id:number=0;
   @Input() precio: number=0;
   @Input() descripcion: string="";
 

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductosService } from '../productos.service';
+import { ProductoClass } from '../models/producto';
 
 
 @Component({
@@ -10,17 +11,21 @@ import { ProductosService } from '../productos.service';
 
 
 export class ProductosComponent implements OnInit{
-  productos=[];
+  productos : ProductoClass[]=[];
   constructor(private productosServicio:ProductosService){}
   ngOnInit() {
     this.recuperarTodos();
   }
 
   recuperarTodos() {
-    this.productosServicio.recuperarTodos().subscribe((result:any) => {
-      console.log(result);
+    this.productosServicio.recuperarTodos().subscribe((result:ProductoClass[]) => {
       this.productos = result;
     })
   }
 
+ seleccionar(id:number) {
+    this.productosServicio.seleccionar(id).subscribe((result:any) => this.productos = result[id]);
+    console.log(this.productos);
+  }
 }
+
