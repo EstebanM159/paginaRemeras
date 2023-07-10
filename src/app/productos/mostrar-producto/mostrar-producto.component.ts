@@ -11,6 +11,7 @@ import { ProductoClass } from 'src/app/models/producto';
   styleUrls: ['./mostrar-producto.component.css']
 })
 export class MostrarProductoComponent {
+  public ruta:string='../../../assets/';
   producto:ProductoClass=new ProductoClass;
   ngOnInit() {
     this.seleccionar((this.rutaActiva.snapshot.params)['id']);

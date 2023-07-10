@@ -13,16 +13,13 @@ export class ProductoComponent implements OnInit{
   @Input() nombre:string="";
   @Input() precio: number=0;
   @Input() descripcion: string="";
-
+  @Input() img:string="";
+  public ruta:string='../../../assets/';
 
 
   constructor(private productosServicio:ProductosService) { }
 
-//   seleccionar(id:number) {
-//     this.productosServicio.seleccionar(id).subscribe((result:any) => this.producto = result[id]);
-//     console.log(this.producto);
-//     console.log("hicisteclick");
-// }
+
   ngOnInit() {
   }
 }
