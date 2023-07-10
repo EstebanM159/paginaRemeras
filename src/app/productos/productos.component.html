@@ -1,10 +1,7 @@
 <h1>Nuestros productos</h1>
 <div class="grid contenedor">
-
   <div *ngFor="let prod of productos">
-    <app-producto (click)="seleccionar(prod.id)"  [descripcion]="prod.descripcion" [precio]="prod.precio"  >
-
-
+    <app-producto [id]="prod.id" [nombre]="prod.nombre"  [precio]="prod.precio"  >
     </app-producto>
   </div>
 

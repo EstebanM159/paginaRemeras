@@ -1,10 +1,11 @@
 
 <div class="producto">
-  <a [routerLink]="['/mostrar-producto']" >
+  <!-- el router link recibe bien el id -->
+  <a [routerLink]="['/mostrar-producto',id]" >
     <img class=" producto__imagen" src=" ../../../../../assets/1.jpg" alt="imagen camisa">
     <div class="producto__informacion">
       <!-- ACA HAY QUE PASARLE LOS DATOS -->
-      <p class="producto__nombre">{{descripcion}}</p>
+      <p class="producto__nombre">{{nombre}}</p>
       <p class="producto__precio">{{precio}}$</p>
     </div>
   </a>

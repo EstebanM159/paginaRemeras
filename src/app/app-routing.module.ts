@@ -14,6 +14,10 @@ const routes: Routes = [
     component:SobrenosotrosComponent
   },
   {
+    path:'mostrar-producto/:id',
+    component:MostrarProductoComponent
+  },
+  {
     path:'mostrar-producto',
     component:MostrarProductoComponent
   }

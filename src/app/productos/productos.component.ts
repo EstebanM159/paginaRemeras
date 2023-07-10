@@ -23,9 +23,5 @@ export class ProductosComponent implements OnInit{
     })
   }
 
- seleccionar(id:number) {
-    this.productosServicio.seleccionar(id).subscribe((result:any) => this.productos = result[id]);
-    console.log(this.productos);
-  }
 }
 
