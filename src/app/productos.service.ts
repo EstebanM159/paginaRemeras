@@ -7,19 +7,17 @@ import { ProductoClass  } from '././models/producto';
   providedIn: 'root'
 })
 export class ProductosService {
-  url='http://localhost/remeras/'; // disponer url de su servidor que tiene las páginas PHP
+  url='../assets/productos.json'; // disponer url de su servidor que tiene las páginas PHP
 
   constructor(private http: HttpClient) { }
 
   recuperarTodos() {
-    return this.http.get<ProductoClass[]>(`${this.url}recuperartodos.php`);
+    return this.http.get<ProductoClass[]>(`${this.url}`);
 
   }
 
 
-  seleccionar(id:number) {
-    return this.http.get<ProductoClass>(`${this.url}seleccionar.php?id=${id}`);
-  }
+
 
 
 }

@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "nombre": "React",
+    "descripcion": "Demuestra tu amor por React con esta remera que muestra su poder y versatilidad. Un diseño moderno y elegante que representa la creación de aplicaciones web dinámicas e interactivas con React.",
+    "precio": 20,
+    "img": "react.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Javascript",
+    "descripcion": "Si eres un apasionado del lenguaje de programación más utilizado en la web, esta remera es para ti. Un diseño vibrante que muestra el icónico logotipo de JavaScript y resalta su versatilidad y capacidad de desarrollo en aplicaciones web modernas.",
+    "precio": 10,
+    "img": "javascript.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "VueJS",
+    "descripcion": "Muestra tu pasión por Vue.js con esta remera que captura la esencia de este framework de JavaScript. Un diseño moderno y fresco que refleja el desarrollo de aplicaciones web intuitivas y eficientes con Vue.js.",
+    "precio": 15,
+    "img": "vueJS.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Angular",
+    "descripcion": "Celebra tu devoción por Angular con esta remera que muestra su poder y elegancia. Un diseño distintivo y elegante que representa la construcción de aplicaciones web robustas y escalables con Angular.",
+    "precio": 25,
+    "img": "angular.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Html",
+    "descripcion": "Si eres un amante del diseño web y disfrutas creando interfaces atractivas, esta remera de CSS es imprescindible. Un diseño minimalista y estilizado que destaca la importancia de CSS en la apariencia y presentación de los sitios web.",
+    "precio": 10,
+    "img": "html.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Github",
+    "descripcion": "Descripcion de github",
+    "precio": 12,
+    "img": "github.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "Node",
+    "descripcion": "Descripcion de node",
+    "precio": 10,
+    "img": "node.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "TypeScript",
+    "descripcion": "Descripcion de typescript",
+    "precio": 14,
+    "img": "typescript.jpg"
+  },
+  {
+    "id": 9,
+    "nombre": "Sass",
+    "descripcion": "Descripcion de sass",
+    "precio": 9,
+    "img": "sass.jpg"
+  },
+  {
+    "id": 10,
+    "nombre": "bulma",
+    "descripcion": "Descripcion de bulma",
+    "precio": 7,
+    "img": "bulma.jpg"
+  },
+  {
+    "id": 11,
+    "nombre": "GraphQL",
+    "descripcion": "Descripcion de graphQL",
+    "precio": 10,
+    "img": "graphql.jpg"
+  },
+  {
+    "id": 12,
+    "nombre": "Redux",
+    "descripcion": "Descripcion de redux",
+    "precio": 8,
+    "img": "redux.jpg"
+  },
+  {
+    "id": 13,
+    "nombre": "Drupal",
+    "descripcion": "Descripcion de drupal",
+    "precio": 5,
+    "img": "drupal.jpg"
+  },
+  {
+    "id": 14,
+    "nombre": "WordPress",
+    "descripcion": "Descripcion de wordpress",
+    "precio": 10,
+    "img": "wordpress.jpg"
+  }
+]

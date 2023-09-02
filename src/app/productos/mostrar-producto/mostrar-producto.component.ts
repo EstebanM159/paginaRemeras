@@ -11,16 +11,30 @@ import { ProductoClass } from 'src/app/models/producto';
   styleUrls: ['./mostrar-producto.component.css']
 })
 export class MostrarProductoComponent {
+  constructor(private productosServicios:ProductosService, private rutaActiva:ActivatedRoute){}
   public ruta:string='../../../assets/';
   producto:ProductoClass=new ProductoClass;
+   productos : ProductoClass[]=[];
   ngOnInit() {
-    this.seleccionar((this.rutaActiva.snapshot.params)['id']);
+    this.traerProductos((this.rutaActiva.snapshot.params)['id']);
   }
-  constructor(private productosServicios:ProductosService, private rutaActiva:ActivatedRoute){}
-  seleccionar(id:number) {
-    this.productosServicios.seleccionar(id).subscribe(
-      (result:any) =>
-      this.producto = result);
+  traerProductos(id:number) {
+    this.productosServicios.recuperarTodos().subscribe(result =>{
+      this.productos = result;
+    //   for (let i = 0; i < this.productos.length; i++) {
+    //   console.log(this.productos[i].id);
+    //   if(id==this.productos[i].id){
+    //     console.log("Es correcto");
+    //   }
+    // }
+    this.productos.forEach(prod => {
+        // console.log(prod)
+        if(prod.id==id){
+          this.producto = prod;
+        }
+    });
 
+  });
+  }
 
-  }}
+}

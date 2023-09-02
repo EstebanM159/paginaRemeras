@@ -11,7 +11,7 @@ import { ProductoClass } from '../models/producto';
 
 
 export class ProductosComponent implements OnInit{
-  productos : ProductoClass[]=[];
+  public productos : ProductoClass[]=[];
   constructor(private productosServicio:ProductosService){}
   ngOnInit() {
     this.recuperarTodos();
