@@ -18,7 +18,9 @@ export class MostrarProductoComponent {
   }
   constructor(private productosServicios:ProductosService, private rutaActiva:ActivatedRoute){}
   seleccionar(id:number) {
-    this.productosServicios.seleccionar(id).subscribe((result:any) => this.producto = result);
+    this.productosServicios.seleccionar(id).subscribe(
+      (result:any) =>
+      this.producto = result);
 
 
   }}

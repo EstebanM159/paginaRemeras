@@ -6,6 +6,11 @@ import { SobrenosotrosComponent } from './sobrenosotros/sobrenosotros.component'
 import { MostrarProductoComponent } from './productos/mostrar-producto/mostrar-producto.component';
 const routes: Routes = [
   {
+    path:'',
+    redirectTo:'productos',
+    pathMatch:'full'
+  },
+  {
     path:'productos',
     component:ProductosComponent
   },

@@ -18,7 +18,6 @@ export class ProductosService {
 
 
   seleccionar(id:number) {
-
     return this.http.get<ProductoClass>(`${this.url}seleccionar.php?id=${id}`);
   }
 
