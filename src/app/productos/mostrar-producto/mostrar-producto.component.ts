@@ -21,14 +21,7 @@ export class MostrarProductoComponent {
   traerProductos(id:number) {
     this.productosServicios.recuperarTodos().subscribe(result =>{
       this.productos = result;
-    //   for (let i = 0; i < this.productos.length; i++) {
-    //   console.log(this.productos[i].id);
-    //   if(id==this.productos[i].id){
-    //     console.log("Es correcto");
-    //   }
-    // }
     this.productos.forEach(prod => {
-        // console.log(prod)
         if(prod.id==id){
           this.producto = prod;
         }

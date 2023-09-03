@@ -1,1 +1,6 @@
-Hacer la base de datos y pasar los datos etcetc y quizas mejorar algoo mas visual
+cambiar logo
+sanitizar datos
+hacer validaciones
+mejorar visualmente
+agregar un carrito y hacerlo funcional
+
