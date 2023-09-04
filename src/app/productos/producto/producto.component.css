@@ -13,7 +13,7 @@
   font-size: 1.3rem;
 }
 .producto__imagen{
-  border-radius: 2rem;
+  border-radius: .5rem;
 }
 .producto__precio,
 .producto__nombre {
