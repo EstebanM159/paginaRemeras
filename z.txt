@@ -1,6 +1,8 @@
-cambiar logo
+cambiar logo ✔
+mejorar visualmente ✔
+arreglar el header  ✔
+arreglar que cuando se haga click en un enlace se cierre el nav
 sanitizar datos
 hacer validaciones
-mejorar visualmente
 agregar un carrito y hacerlo funcional
 
