@@ -13,12 +13,15 @@ export class NavComponent {
 
     }
 
-  abrir(){
-    if(!this.open){
-      this.open=true;
-    }else{
-      this.open=false;
+    public abrir(){
+      if(!this.open){
+        this.open=true;
+      }else{
+        this.open=false;
+      }
     }
-  }
+    cerrar(){
+      this.open = false;
+    }
   }
 

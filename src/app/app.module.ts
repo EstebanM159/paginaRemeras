@@ -12,6 +12,7 @@ import { ProductoComponent } from './productos/producto/producto.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { MostrarProductoComponent } from './productos/mostrar-producto/mostrar-producto.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MostrarProductoComponent } from './productos/mostrar-producto/mostrar-p
     ProductosComponent,
     SobrenosotrosComponent,
     ProductoComponent,
-    MostrarProductoComponent
+    MostrarProductoComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
