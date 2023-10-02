@@ -1,11 +1,10 @@
 
  .camisa__contenido p {
-   line-height: 3rem;
+  margin: 2rem 1rem;
+   line-height: 2rem;
    text-align: center;
  }
-.camisa__contenido p{
-  margin: 4rem 0;
-}
+
 @media (min-width: 940px) {
   .camisa {
     display: grid;
@@ -16,7 +15,7 @@
     padding-top: 0;
     display: flex;
     flex-direction: column;
-      justify-content: space-evenly;
+    justify-content: space-evenly;
   }
 
 }
@@ -50,6 +49,7 @@
 }
 
 .formulario__submit {
+
   background-color: var(--secundario);
   border: none;
   font-size: 1rem;

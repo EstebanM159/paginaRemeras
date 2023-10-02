@@ -37,63 +37,63 @@
   {
     "id": 6,
     "nombre": "Github",
-    "descripcion": "Descripcion de github",
+    "descripcion": "Esta remera es para los amantes de la programación colaborativa. Demuestra tu pasión por el código y el trabajo en equipo con esta prenda elegante que presenta el icónico logo de GitHub.",
     "precio": 12,
     "img": "github.jpg"
   },
   {
     "id": 7,
     "nombre": "Node",
-    "descripcion": "Descripcion de node",
+    "descripcion": "Si eres un fanático de Node.js, esta remera es para ti. Lleva contigo el poder de este entorno de ejecución de JavaScript con un diseño moderno y cómodo que muestra tu devoción por la tecnología.",
     "precio": 10,
     "img": "node.jpg"
   },
   {
     "id": 8,
     "nombre": "TypeScript",
-    "descripcion": "Descripcion de typescript",
+    "descripcion": "Muestra tu aprecio por TypeScript con esta remera de alta calidad. Con su diseño elegante y minimalista, es la elección perfecta para los desarrolladores que aman este superset de JavaScript.",
     "precio": 14,
     "img": "typescript.jpg"
   },
   {
     "id": 9,
     "nombre": "Sass",
-    "descripcion": "Descripcion de sass",
+    "descripcion": "Para aquellos que trabajan con CSS y aprecian la versatilidad de Sass, esta remera es una elección ideal. Con su estilo único y comodidad, te destacarás en cualquier ocasión.",
     "precio": 9,
     "img": "sass.jpg"
   },
   {
     "id": 10,
     "nombre": "bulma",
-    "descripcion": "Descripcion de bulma",
+    "descripcion": "Si eres un fanático del diseño web y amas utilizar el framework CSS Bulma, esta remera es para ti. Luce elegante y moderno con este diseño que muestra tu pasión por la creación de interfaces atractivas.",
     "precio": 7,
     "img": "bulma.jpg"
   },
   {
     "id": 11,
     "nombre": "GraphQL",
-    "descripcion": "Descripcion de graphQL",
+    "descripcion": "Lleva contigo la flexibilidad de GraphQL con esta remera de diseño vanguardista. Haz una declaración de estilo y muestra tu entusiasmo por este lenguaje de consulta flexible.",
     "precio": 10,
     "img": "graphql.jpg"
   },
   {
     "id": 12,
     "nombre": "Redux",
-    "descripcion": "Descripcion de redux",
+    "descripcion": "Los amantes de la gestión de estado en aplicaciones encontrarán esta remera irresistible. Con su diseño a la moda, puedes expresar tu pasión por Redux de una manera elegante.",
     "precio": 8,
     "img": "redux.jpg"
   },
   {
     "id": 13,
     "nombre": "Drupal",
-    "descripcion": "Descripcion de drupal",
+    "descripcion": "Si eres un entusiasta de Drupal y su sistema de gestión de contenido, esta remera es imprescindible. Luce esta prenda de alta calidad para mostrar tu devoción por esta poderosa plataforma.",
     "precio": 5,
     "img": "drupal.jpg"
   },
   {
     "id": 14,
     "nombre": "WordPress",
-    "descripcion": "Descripcion de wordpress",
+    "descripcion": "Para los apasionados de WordPress y la creación de sitios web, esta remera es una elección perfecta. Haz una declaración de estilo y comparte tu amor por esta popular plataforma de blogs y sitios web.",
     "precio": 10,
     "img": "wordpress.jpg"
   }
