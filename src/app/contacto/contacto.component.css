@@ -1,7 +1,7 @@
 
 .formulario{
   font-family: var(--fuentePrincipal);
-  height: 75vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -33,6 +33,7 @@
     margin-bottom: 2rem;
   }
   .formulario textarea {
+    display: block;
     height: 10rem;
   }
   .formulario .forma-contacto {

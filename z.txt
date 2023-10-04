@@ -4,13 +4,18 @@ arreglar el header  ✔
 arreglar que cuando se haga click en un enlace se cierre el nav✔
 agregar contacto ✔
 mejorar visualmente contacto ✔
-problema con el formulario de producto
-mejorar la pagina producto
+problema con el formulario de producto ✔
+mejorar la pagina producto ✔
+mejorar nosotros
+agregar un carrito
+buscar como 👀
 validar formulario
 sanitizar datos
+
 hacer validaciones
 agregar un carrito y hacerlo funcional
 
 
 --------------------para el futuro---------------------------
+filtro para los productos
 crear una interface CRUD con sus respectivas paginas
