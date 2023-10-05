@@ -73,5 +73,24 @@ h3 {
   width: 90%;
 }
 .titulo {
-  margin: 4rem 0;
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+/* @media (width<250px) {
+  .titulo {
+    font-size: 2rem;
+    margin: 2rem;
+  }
+} */
+@media (width>310px) {
+  .titulo{
+    font-size: 3rem;
+    margin: 3rem;
+  }
+}
+@media (width>450px) {
+  .titulo {
+    font-size: 4rem;
+    margin: 4rem;
+  }
 }
