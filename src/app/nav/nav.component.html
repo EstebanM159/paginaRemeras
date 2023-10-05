@@ -1,6 +1,7 @@
-<button class="nav-button" (click)="abrir()" ><img src="../../assets/menu.png" alt=""></button>
+<button class="cart-button"><img src="../../assets/shopping-cart.png" alt="logo-carrito"></button>
+<button class="nav-button" (click)="abrir()"><img src="../../assets/menu.png" alt=""></button>
 <nav class="navegacion" [ngClass]="{'navegacion-open':open}">
-  <a (click)="cerrar()" class="navegacion__enlace " routerLink="/productos" routerLinkActive="active">Tienda</a>
-  <a (click)="cerrar()"  class="navegacion__enlace " routerLink="/sobrenosotros" routerLinkActive="active">Nosotros</a>
-  <a (click)="cerrar()" class="navegacion__enlace" routerLink="/contacto">CONTACTO</a>
+  <a  class="navegacion__enlace " routerLink="/productos" routerLinkActive="active">Tienda</a>
+  <a   class="navegacion__enlace " routerLink="/sobrenosotros" routerLinkActive="active">Nosotros</a>
+  <a  class="navegacion__enlace" routerLink="/contacto">CONTACTO</a>
 </nav>
