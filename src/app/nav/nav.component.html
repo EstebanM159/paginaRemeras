@@ -1,9 +1,9 @@
 <div class="nav-container">
-  <button class="cart-button" (click)="alternarBandera()" ><img src="../../assets/shopping-cart.png" alt="logo-carrito"></button>
+  <button class="cart-button" (click)="alternarBandera()" ><img class="cart-button-img" [ngClass]="{'cart-button-active':banderaDisabled}" src="../../assets/shopping-cart.png" alt="logo-carrito"></button>
   <button class="nav-button" (click)="abrir()"><img src="../../assets/menu.png" alt=""></button>
   <nav class="navegacion" [ngClass]="{'navegacion-open':open}">
     <a  class="navegacion__enlace " routerLink="/productos" routerLinkActive="active">Tienda</a>
     <a   class="navegacion__enlace " routerLink="/sobrenosotros" routerLinkActive="active">Nosotros</a>
-    <a  class="navegacion__enlace" routerLink="/contacto">CONTACTO</a>
+    <a  class="navegacion__enlace" routerLink="/contacto" routerLinkActive="active">CONTACTO</a>
   </nav>
 </div>

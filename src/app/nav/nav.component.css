@@ -64,6 +64,9 @@ nav a.active,
     border: none;
     width: 3rem;
 }
-.cart-button img {
+.cart-button-img {
   filter: invert();
+}
+.cart-button-active{
+  filter: contrast(0.5);
 }
