@@ -6,8 +6,9 @@ agregar contacto ✔
 mejorar visualmente contacto ✔
 problema con el formulario de producto ✔
 mejorar la pagina producto ✔
-mejorar nosotros
+mejorar nosotros✔
 agregar un carrito
+agregar un tipo de producto en el json
 buscar como 👀
 validar formulario
 sanitizar datos

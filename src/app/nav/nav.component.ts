@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Output,EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -6,12 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent {
-    open:boolean=false;
-   public isBooleanVariable: boolean = false;
-   navActive(){
-      this.isBooleanVariable = true;
+  @Output() banderaCambiada = new EventEmitter<boolean>();
+  public isBooleanVariable: boolean = false;
+  open:boolean=false;
+  banderaDisabled = false;
 
-    }
+
+
+  alternarBandera() {
+    this.banderaDisabled = !this.banderaDisabled;
+    this.banderaCambiada.emit(this.banderaDisabled);
+  }
+  navActive(){
+    this.isBooleanVariable = true;
+  }
+
 
     public abrir(){
       if(!this.open){

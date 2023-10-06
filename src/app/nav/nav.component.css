@@ -1,3 +1,9 @@
+.nav-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
 .navegacion {
     display: flex;
     justify-content: flex-start;
@@ -61,4 +67,3 @@ nav a.active,
 .cart-button img {
   filter: invert();
 }
-/* TESTEAR SI ANDA */

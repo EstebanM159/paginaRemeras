@@ -2,6 +2,25 @@
   <a href="#">
     <img class="header__logo" src="../../assets/logo.png" alt="logotipo">
   </a>
-  <app-nav></app-nav>
+  <app-nav (banderaCambiada)="BanderaCambiada($event)"></app-nav>
 </header>
+<!--   -->
+<div class="carrito" [ngClass]="{'carrito-open':estadoBandera}">
+  <div class="carrito-titulo">
+    <h2>Carrito</h2>
+  </div>
+  <div class="prod-in-cart">
+    <div class="container-imagen-cart">
+      <img src="../../assets/github.jpg" alt="">
+    </div>
+    <div class="detalles">
+      <h3 class="titulo-desc">remera GITHUB</h3>
+      <div class="precio-total">
+        <span class="precio-cart">Precio: 12$</span>
+        <span class="total">Total: 36$</span>
+      </div>
+    </div>
+    <a><img id="buton-delete" src="../../assets/icon-delete.svg" alt=""></a>
+  </div>
+</div>
 
