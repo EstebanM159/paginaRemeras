@@ -7,7 +7,8 @@ mejorar visualmente contacto ✔
 problema con el formulario de producto ✔
 mejorar la pagina producto ✔
 mejorar nosotros✔
-agregar un carrito
+agregar un carrito✔
+hacer dinamico el carrito
 agregar un tipo de producto en el json
 buscar como 👀
 validar formulario
@@ -20,3 +21,7 @@ agregar un carrito y hacerlo funcional
 --------------------para el futuro---------------------------
 filtro para los productos
 crear una interface CRUD con sus respectivas paginas
+
+
+
+CARRITO=

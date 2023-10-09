@@ -28,6 +28,7 @@
   font-family: var(--fuentePrincipal);
   color: var(--blanco);
   font-size: 3rem;
+  line-height: 3rem;
 }
 
 nav a.active,

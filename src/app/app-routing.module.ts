@@ -5,6 +5,7 @@ import { ProductosComponent } from './productos/productos.component';
 import { SobrenosotrosComponent } from './sobrenosotros/sobrenosotros.component';
 import { MostrarProductoComponent } from './productos/mostrar-producto/mostrar-producto.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { HeaderComponent } from './header/header.component';
 const routes: Routes = [
   {
     path:'',

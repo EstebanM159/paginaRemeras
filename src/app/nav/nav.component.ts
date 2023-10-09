@@ -1,5 +1,5 @@
 import { Component,Output,EventEmitter } from '@angular/core';
-
+import { CarritoService } from '../carrito.service';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -11,7 +11,9 @@ export class NavComponent {
   open:boolean=false;
   banderaDisabled = false;
 
+  constructor(private carritoService:CarritoService){
 
+  }
 
   alternarBandera() {
     this.banderaDisabled = !this.banderaDisabled;
@@ -32,5 +34,6 @@ export class NavComponent {
     cerrar(){
       this.open = false;
     }
+
   }
 
