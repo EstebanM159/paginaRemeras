@@ -6,12 +6,12 @@
   public img !:string;
   }
 
-export interface CarritoClass{//En un futuro se le podria agregar la descripcion
-  id: number;
-  nombre:string;
-  precio : number;
-  img : string;
-  talle : string;
-  cantidad : number;
+export class CarritoClass{//En un futuro se le podria agregar la descripcion
+  public id!: number;
+  public nombre!:string;
+  public precio !: number;
+  public img !: string;
+  public talle !: string;
+  public cantidad !: number;
 
 }

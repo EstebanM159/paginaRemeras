@@ -14,15 +14,15 @@ import { CarritoService } from 'src/app/carrito.service';
 export class MostrarProductoComponent {
   constructor(private productosServicios:ProductosService, private rutaActiva:ActivatedRoute, private carritoService:CarritoService){}
   public ruta:string='../../../assets/';
-  productoCarrito !: CarritoClass  ;
+  productoCarrito : CarritoClass  = new CarritoClass;
   producto:ProductoClass=new ProductoClass;
   productos : ProductoClass[]=[];
   opcionSeleccionada!:string;
   cant!:number;
   ngOnInit() {
     this.traerProductos((this.rutaActiva.snapshot.params)['id']);
-
   }
+
   // Trae producto con el id mediante el servicio
   traerProductos(id:number) {
     this.productosServicios.recuperarTodos().subscribe(result =>{
@@ -30,7 +30,6 @@ export class MostrarProductoComponent {
       this.productos.forEach(prod => {
         if(prod.id==id){
           this.producto = prod;
-
         }
       });
 
@@ -43,8 +42,8 @@ export class MostrarProductoComponent {
     this.productoCarrito.nombre = this.producto.nombre;
     this.productoCarrito.cantidad = this.cant;
     this.productoCarrito.talle = this.opcionSeleccionada;
-
     this.carritoService.agregarProducto(this.productoCarrito);
+
   }
 
 }

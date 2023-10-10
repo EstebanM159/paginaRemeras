@@ -8,7 +8,8 @@ problema con el formulario de producto ✔
 mejorar la pagina producto ✔
 mejorar nosotros✔
 agregar un carrito✔
-hacer dinamico el carrito
+hacer dinamico el carrito✔
+validar input del carrito
 agregar un tipo de producto en el json
 buscar como 👀
 validar formulario

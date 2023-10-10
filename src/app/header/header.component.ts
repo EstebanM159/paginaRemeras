@@ -8,14 +8,21 @@ import { CarritoClass } from '../models/producto';
 })
 export class HeaderComponent  {
   constructor(private carritoService:CarritoService){}
+  public ruta:string='../../../assets/';
   estadoBandera = false;
+  cartVacio=true;
   productos:CarritoClass[]=[];
 
   BanderaCambiada(valorBandera: boolean) {
-    this.estadoBandera = valorBandera;
-    if(this.estadoBandera){
+      this.estadoBandera = valorBandera;
       this.productos = this.carritoService.obtenerProductos();
-    }
-  }
+      console.log (this.productos);
+      if(this.productos.length!=0){
+        this.cartVacio=false;
+      }
 
+  }
+  eliminar(i: number){
+    this.carritoService.eliminarProducto(i)
+  }
 }

@@ -1,5 +1,5 @@
 <header class="header">
-  <a href="#">
+  <a routerLink="/productos">
     <img class="header__logo" src="../../assets/logo.png" alt="logotipo">
   </a>
   <app-nav (banderaCambiada)="BanderaCambiada($event)"></app-nav>
@@ -9,20 +9,22 @@
   <div class="carrito-titulo">
     <h2>Carrito</h2>
   </div>
-  <!-- FALTA LISTAR LOS PRODUCTOS -->
-  <div  class="prod-in-cart">
+  <h2 class="carrito-titulo" *ngIf="!productos[0]">VACIO</h2>
+  <!-- NOSE XQ FUNCIONA -->
+  <div *ngFor="let prod of productos; index as a"  class="prod-in-cart">
     <div class="container-imagen-cart">
-      <img src="../../assets/github.jpg" alt="">
+      <img src="{{ruta+prod.img}}" alt="remera {{prod.nombre}}">
     </div>
     <div class="detalles">
-      <h3 class="titulo-desc">remera GITHUB</h3>
+      <h3 class="titulo-desc">{{prod.nombre}}</h3>
       <div class="precio-total">
 
-        <span class="precio-cart">Precio:</span>
-        <span class="total">Total: 36$</span>
+        <span class="precio-cart">Precio: {{prod.precio}}</span>
+        <span class="total">Cantidad: {{prod.cantidad}}</span>
+        <span class="total">Total: {{prod.cantidad*prod.precio}}</span>
       </div>
     </div>
-    <a><img id="buton-delete" src="../../assets/icon-delete.svg" alt=""></a>
+    <a (click)="eliminar(a)"><img id="buton-delete" src="../../assets/icon-delete.svg" alt=""></a>
   </div>
 </div>
 
