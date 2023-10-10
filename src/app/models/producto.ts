@@ -13,5 +13,5 @@ export class CarritoClass{//En un futuro se le podria agregar la descripcion
   public img !: string;
   public talle !: string;
   public cantidad !: number;
-
+  public total!:number;
 }

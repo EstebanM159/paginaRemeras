@@ -14,26 +14,25 @@ export class NavComponent {
   constructor(private carritoService:CarritoService){
 
   }
-
+  cerrarTodo(){
+    this.banderaDisabled=false;
+    this.banderaCambiada.emit(this.banderaDisabled);
+    if(this.open){
+      this.open=!this.open;
+    }
+  }
   alternarBandera() {
     this.banderaDisabled = !this.banderaDisabled;
     this.banderaCambiada.emit(this.banderaDisabled);
+    if(this.open){
+      this.open=!this.open;
+    }
   }
-  navActive(){
-    this.isBooleanVariable = true;
-  }
-
-
     public abrir(){
-      if(!this.open){
-        this.open=true;
-      }else{
-        this.open=false;
-      }
+        this.banderaCambiada.emit(this.banderaDisabled=false)
+        this.open=!this.open;
     }
-    cerrar(){
-      this.open = false;
-    }
+
 
   }
 

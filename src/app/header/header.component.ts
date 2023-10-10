@@ -14,13 +14,9 @@ export class HeaderComponent  {
   productos:CarritoClass[]=[];
 
   BanderaCambiada(valorBandera: boolean) {
+    console.log(valorBandera);
       this.estadoBandera = valorBandera;
       this.productos = this.carritoService.obtenerProductos();
-      console.log (this.productos);
-      if(this.productos.length!=0){
-        this.cartVacio=false;
-      }
-
   }
   eliminar(i: number){
     this.carritoService.eliminarProducto(i)

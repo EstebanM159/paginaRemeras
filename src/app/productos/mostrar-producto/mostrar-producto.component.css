@@ -7,6 +7,16 @@
 .camisa img{
   border-radius: .6rem;
 }
+.precio-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+.camisa__precio{
+  font-size: 3rem;
+  font-family: var(--fuentePrincipal);
+}
 @media (min-width: 940px) {
   .camisa {
     display: grid;
@@ -78,4 +88,5 @@ gap: 2rem;
 .formulario__submit:hover {
   cursor: pointer;
   background-color: var(--secundarioOscuro);
+  color: #fff;
 }

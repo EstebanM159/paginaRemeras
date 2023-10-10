@@ -42,6 +42,7 @@ export class MostrarProductoComponent {
     this.productoCarrito.nombre = this.producto.nombre;
     this.productoCarrito.cantidad = this.cant;
     this.productoCarrito.talle = this.opcionSeleccionada;
+    this.productoCarrito.total = this.cant*this.producto.precio;
     this.carritoService.agregarProducto(this.productoCarrito);
 
   }

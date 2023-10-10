@@ -1,15 +1,12 @@
-<header class="header">
-  <a routerLink="/productos">
-    <img class="header__logo" src="../../assets/logo.png" alt="logotipo">
-  </a>
+
   <app-nav (banderaCambiada)="BanderaCambiada($event)"></app-nav>
-</header>
+
 <!-- CARRITO  -->
 <div class="carrito" [ngClass]="{'carrito-open':estadoBandera}">
   <div class="carrito-titulo">
     <h2>Carrito</h2>
   </div>
-  <h2 class="carrito-titulo" *ngIf="!productos[0]">VACIO</h2>
+  <h2  *ngIf="!productos[0]">VACIO</h2>
   <!-- NOSE XQ FUNCIONA -->
   <div *ngFor="let prod of productos; index as a"  class="prod-in-cart">
     <div class="container-imagen-cart">
@@ -17,14 +14,14 @@
     </div>
     <div class="detalles">
       <h3 class="titulo-desc">{{prod.nombre}}</h3>
-      <div class="precio-total">
+      <!-- <div class="precio-total"> -->
 
-        <span class="precio-cart">Precio: {{prod.precio}}</span>
-        <span class="total">Cantidad: {{prod.cantidad}}</span>
-        <span class="total">Total: {{prod.cantidad*prod.precio}}</span>
-      </div>
+        <span class="precio-cart">Precio: ${{prod.precio}}</span>
+        <span class="cantidad">Cantidad: {{prod.cantidad}}</span>
+      <!-- </div> -->
     </div>
     <a (click)="eliminar(a)"><img id="buton-delete" src="../../assets/icon-delete.svg" alt=""></a>
   </div>
+
 </div>
 
