@@ -21,8 +21,11 @@ export class CarritoService {
   obtenerProductos() {
     return this.productos;
   }
+  calcularTotal() {
+    return this.productos.reduce((total, producto) => total + producto.precio * producto.cantidad, 0);
+  }
+
+
 }
-  // calcularTotal() {
-  //   return this.productos.reduce((total, producto) => total + producto.precio, 0);
-  // }
+
 

@@ -19,6 +19,7 @@ export class MostrarProductoComponent {
   productos : ProductoClass[]=[];
   opcionSeleccionada!:string;
   cant!:number;
+
   ngOnInit() {
     this.traerProductos((this.rutaActiva.snapshot.params)['id']);
   }
@@ -32,7 +33,6 @@ export class MostrarProductoComponent {
           this.producto = prod;
         }
       });
-
     })
   }
    agregarAlCarrito() {

@@ -12,13 +12,20 @@ export class HeaderComponent  {
   estadoBandera = false;
   cartVacio=true;
   productos:CarritoClass[]=[];
+  total:number=0;
 
   BanderaCambiada(valorBandera: boolean) {
-    console.log(valorBandera);
       this.estadoBandera = valorBandera;
       this.productos = this.carritoService.obtenerProductos();
+      // if(this.productos[0]){
+      //   this.cartVacio=false
+      // }
   }
   eliminar(i: number){
     this.carritoService.eliminarProducto(i)
+  }
+  calcular(){
+    this.total=this.carritoService.calcularTotal();
+    console.log(this.total);
   }
 }

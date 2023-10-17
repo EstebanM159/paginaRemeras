@@ -17,11 +17,18 @@
   font-size: 3rem;
   font-family: var(--fuentePrincipal);
 }
-@media (min-width: 940px) {
+@media (width>= 940px) {
+  .precio-container{
+    justify-content: start;
+  }
+}
+@media (width>= 940px) {
   .camisa {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    place-items: center;
     column-gap: 2rem;
+    padding: 5rem 0;
   }
   .camisa__contenido{
     padding-top: 0;
