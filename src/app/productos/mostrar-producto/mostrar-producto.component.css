@@ -13,6 +13,7 @@
   align-items: center;
   margin: 2rem 0;
 }
+
 .camisa__precio{
   font-size: 3rem;
   font-family: var(--fuentePrincipal);
@@ -20,6 +21,7 @@
 @media (width>= 940px) {
   .precio-container{
     justify-content: start;
+    margin: 0;
   }
 }
 @media (width>= 940px) {
@@ -96,4 +98,11 @@ gap: 2rem;
   cursor: pointer;
   background-color: var(--secundarioOscuro);
   color: #fff;
+}
+.alerta{
+  background-color: #ff8888;
+  color: #000;
+  font-family: var(--fuentePrincipal);
+  font-size: 1.5rem;
+  text-align: center;
 }

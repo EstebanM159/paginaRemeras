@@ -9,16 +9,10 @@ mejorar la pagina producto ✔
 mejorar nosotros✔
 agregar un carrito✔
 hacer dinamico el carrito✔
-validar input del carrito
+validar input del carrito✔
 si agrego una misma camiseta dos veces sumarla a la anterior
 agregar un tipo de producto en el json
 buscar como 👀
-validar formulario
-sanitizar datos
-
-hacer validaciones
-
-
 
 --------------------para el futuro---------------------------
 filtro para los productos

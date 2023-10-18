@@ -10,15 +10,17 @@
     <p>
       {{producto.descripcion}}
     </p>
-    <form class="formulario">
-      <select [(ngModel)]="opcionSeleccionada" name="talle" class="formulario__campo">
+    <form class="formulario" (ngSubmit)="agregarAlCarrito()">
+      <select [(ngModel)]="opcionSeleccionada" name="talle" class="formulario__campo" #opcion="ngModel" required>
         <option disabled selected>--Seleccionar talla--</option>
         <option value="chica">Chica</option>
         <option  value="mediana" >Mediana</option>
         <option value="grande" >Grande</option>
       </select>
-      <input class="formulario__campo" name="Cantidad" type="number" [(ngModel)]="cant" placeholder="Cantidad" min="1">
-      <a class="formulario__submit" type="submit" value="Agregar Al Carrito" (click)="agregarAlCarrito()">Agregar Al Carrito</a>
+      <span class="alerta" [hidden]="opcion.valid || cantidad.pristine">La talla es obligatoria</span>
+      <input class="formulario__campo" #cantidad="ngModel" name="Cantidad" type="number" [(ngModel)]="cant" placeholder="Cantidad" min="1" required="">
+      <span class="alerta" [hidden]="cantidad.valid || cantidad.pristine">La cantidad es obligatoria</span>
+      <input class="formulario__submit" type="submit" value="Agregar Al Carrito" [disabled]="cantidad.invalid || opcion.invalid">
     </form>
   </div>
 </div>

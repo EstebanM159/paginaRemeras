@@ -6,7 +6,16 @@
   background-color: #000;
   position: relative;
 }
-
+@media (width<=700px){
+  .header{
+    display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem 2rem;
+      background-color: #000;
+      position: relative;
+  }
+}
 .header__logo {
   width: 6rem;
   filter: invert();
@@ -96,4 +105,7 @@ nav a.active,
 }
 .cart-button-active{
   filter: contrast(0.5);
+}
+.cart-button:hover{
+  filter: contrast(0.3);
 }
