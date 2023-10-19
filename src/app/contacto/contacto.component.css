@@ -60,3 +60,10 @@
   }
 
 
+.alerta {
+  background-color: #ff8888;
+  color: #000;
+  font-family: var(--fuentePrincipal);
+  font-size: 1.5rem;
+  text-align: center;
+}
