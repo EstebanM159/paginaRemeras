@@ -13,7 +13,9 @@ export class CarritoService {
   agregarProducto(producto: CarritoClass) { // Especificar el tipo de producto
     this.productos.push(producto);
   }
-
+  actualizarCompra(i:number){
+    this.productos[i].cantidad =  this.productos[i].cantidad + 1
+  }
   eliminarProducto(index:number) {
     this.productos.splice(index, 1);
   }

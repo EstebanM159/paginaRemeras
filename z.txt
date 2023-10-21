@@ -10,12 +10,14 @@ mejorar nosotros✔
 agregar un carrito✔
 hacer dinamico el carrito✔
 validar input del carrito✔
-corregir aspectos en web design(footer)
-si agrego una misma camiseta dos veces sumarla a la anterior
-agregar un tipo de producto en el json
-buscar como 👀
+corregir aspectos en web design(footer) ✔
+si agrego una misma camiseta dos veces sumarla a la anterior ✔
+arreglar el CALCULAR TOTAL(QUE MATEMATICO) ✔
+
 
 --------------------para el futuro---------------------------
+agregar un tipo de producto en el json
+buscar como 👀
 filtro para los productos
 crear una interface CRUD con sus respectivas paginas
 

@@ -17,8 +17,10 @@ export class MostrarProductoComponent {
   productoCarrito : CarritoClass  = new CarritoClass;
   producto:ProductoClass=new ProductoClass;
   productos : ProductoClass[]=[];
+  listaCarrito:CarritoClass[]=[];
   opcionSeleccionada!:string;
   cant!:number;
+  index!:number;
 
   ngOnInit() {
     this.traerProductos((this.rutaActiva.snapshot.params)['id']);
@@ -35,16 +37,26 @@ export class MostrarProductoComponent {
       });
     })
   }
-   agregarAlCarrito() {
-    this.productoCarrito.id = this.producto.id;
-    this.productoCarrito.img = this.producto.img;
-    this.productoCarrito.precio = this.producto.precio
-    this.productoCarrito.nombre = this.producto.nombre;
-    this.productoCarrito.cantidad = this.cant;
-    this.productoCarrito.talle = this.opcionSeleccionada;
-    this.productoCarrito.total = this.cant*this.producto.precio;
-    this.carritoService.agregarProducto(this.productoCarrito);
 
+    encontrarProducto(nom: string): number {
+      this.listaCarrito = this.carritoService.obtenerProductos();
+      const index = this.listaCarrito.findIndex(lc => lc.nombre === nom);
+      return index; // Devolverá -1 si no se encontró el producto o el índice del producto si se encontró.
+    }
+   agregarAlCarrito() {
+    if(this.encontrarProducto(this.producto.nombre) != -1){
+      this.index = this.encontrarProducto(this.producto.nombre)
+      this.carritoService.actualizarCompra(this.index);
+    }else{
+      this.productoCarrito.id = this.producto.id;
+      this.productoCarrito.img = this.producto.img;
+      this.productoCarrito.precio = this.producto.precio
+      this.productoCarrito.nombre = this.producto.nombre;
+      this.productoCarrito.cantidad = this.cant;
+      this.productoCarrito.talle = this.opcionSeleccionada;
+      // esto hace el push en el arreglo
+      this.carritoService.agregarProducto(this.productoCarrito);
+    }
   }
 
 }
