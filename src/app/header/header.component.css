@@ -74,6 +74,14 @@
   align-items: center;
   margin: 1rem 0;
   cursor: pointer;
+  flex-direction: column;
+}
+.boton-calc .total{
+  font-family: var(--fuentePrincipal);
+  font-size: 1.6rem;
+  color: #000;
+  font-weight: 700;
+  gap: 1rem;
 }
 .boton-calc a{
   font-family: Arial, Helvetica, sans-serif;

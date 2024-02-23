@@ -94,7 +94,8 @@ nav a.active,
   }
 }
 .cart-button{
-  margin-right: 1rem;
+    cursor: pointer;
+    margin-right: 1rem;
     background-color: transparent;
     outline: none;
     border: none;

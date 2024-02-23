@@ -6,7 +6,6 @@
     <h2>Carrito</h2>
   </div>
   <h2  *ngIf="!productos[0]">VACIO</h2>
-  <!-- NOSE XQ FUNCIONA -->
   <div *ngFor="let prod of productos; index as a"  class="prod-in-cart">
     <div class="container-imagen-cart">
       <img src="{{ruta+prod.img}}" alt="remera {{prod.nombre}}">
@@ -22,6 +21,7 @@
   </div>
   <!-- ACA PASA LO MISMO QUE PASABA CON LOS PRODUCTOS Y VACIO -->
   <div class="boton-calc" *ngIf="productos[0]">
+    <span *ngIf="total>0" class="total">Total: {{total}}$</span>
     <a (click)="calcular()">Calcular total</a>
   </div>
 </div>

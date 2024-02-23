@@ -1,4 +1,4 @@
-import { Component, OnInit ,Output,EventEmitter} from '@angular/core';
+import { Component} from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { ProductosService } from 'src/app/productos.service';
 import { CarritoClass, ProductoClass } from 'src/app/models/producto';
