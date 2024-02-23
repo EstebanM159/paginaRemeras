@@ -58,14 +58,17 @@
 
 
 .bloque__titulo {
+  color: #F4EEE0;
   margin: 0;
   padding-bottom: 1rem;
 }
 
 .bloque p{
+  color: #8f8e8b;
   font-size:1.5rem;
 }
 .comprar__titulo{
+  color: #F4EEE0;
   font-size: 2.5rem;
   line-height: 3rem;
 }

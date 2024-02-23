@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 :root {
-  --primario: #635985;
+  --primario: #312851;
   --primarioOscuro: #443C68;
   --secundario: #393053;
   --secundarioOscuro: #18122B;
@@ -69,6 +69,7 @@ h1 {
 .titulo {
   margin: 2rem 0;
   font-size: 2rem;
+  color: #F4EEE0;
 }
 
 @media (width>310px) {
