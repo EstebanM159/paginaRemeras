@@ -12,9 +12,6 @@
     <label class="label"  for="telefono">Telefono</label>
     <input [(ngModel)]="clienteContacto.tel" name="telefono" type="tel" id="telefono" placeholder="Tu telefono" #tel="ngModel" required>
     <span class="alerta" [hidden]="tel.valid || tel.pristine">El telefono es obligatorio</span>
-    <h1 style="color: #000;">
-        {{tel.valid}}
-    </h1>
     <label class="label"  for="mensaje">Mensaje</label>
     <textarea [(ngModel)]="clienteContacto.mensaje"  type="text" id="mensaje" placeholder="Tu mensaje" #msj="ngModel" required></textarea>
     <span class="alerta" [hidden]="msj.valid || msj.pristine">El telefono es obligatorio</span>
