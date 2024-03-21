@@ -4,7 +4,7 @@
   justify-content: space-between;
   padding: 1.5rem 6rem;
   background-color: #000;
-  position: relative;
+  /* position: relative; */
 }
 @media (width<=700px){
   .header{
@@ -52,7 +52,6 @@
   color: var(--blanco);
   font-size: 3rem;
   line-height: 3rem;
-  text-wrap: nowrap;
 }
 
 nav a.active,
@@ -90,15 +89,20 @@ nav a.active,
   }
   .nav-container{
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
+    gap: 0;
   }
   .navegacion {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     position: initial;
-    /* width: 100%; */
+    width: 100%;
     overflow: inherit;
+    /* gap: 0; */
+  }
+  .navegacion__enlace{
+  text-wrap: nowrap;
   }
 }
 .cart-button{
