@@ -13,7 +13,7 @@
     <input [(ngModel)]="clienteContacto.tel" name="telefono" type="tel" id="telefono" placeholder="Tu telefono" #tel="ngModel" required>
     <span class="alerta" [hidden]="tel.valid || tel.pristine">El telefono es obligatorio</span>
     <label class="label"  for="mensaje">Mensaje</label>
-    <textarea [(ngModel)]="clienteContacto.mensaje"  type="text" id="mensaje" placeholder="Tu mensaje" #msj="ngModel" required></textarea>
+    <textarea [(ngModel)]="clienteContacto.mensaje" style="resize: none;"  type="text" id="mensaje" placeholder="Tu mensaje" #msj="ngModel" required></textarea>
     <span class="alerta" [hidden]="msj.valid || msj.pristine">El telefono es obligatorio</span>
 
     <label  class="label op">Como desea ser contactado</label>
