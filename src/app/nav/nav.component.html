@@ -8,11 +8,15 @@
     <button class="cart-button" [ngClass]="{'cart-button-active':banderaDisabled}" (click)="alternarBandera()" >
       <img class="cart-button-img"  src="../../assets/shopping-cart.png" alt="logo-carrito">
     </button>
-    <button class="nav-button" (click)="abrir()"><img src="../../assets/menu.png" alt=""></button>
+    <button class="nav-button" (click)="abrir()">
+      <img class="nav-button-img" src="../../assets/menu.png" alt="">
+    </button>
     <nav class="navegacion" [ngClass]="{'navegacion-open':open}">
-      <a class="navegacion__enlace cerrar-nav" [ngClass]="{'cerrar-nav-active':open}" (click)="cerrarTodo()"><img src="../../assets/arrow-bar-left.png" alt="cerrar"></a>
-      <a  class="navegacion__enlace " routerLink="/productos" routerLinkActive="active" (click)="cerrarTodo()">Tienda</a>
-      <a   class="navegacion__enlace " routerLink="/sobrenosotros" routerLinkActive="active" (click)="cerrarTodo()">Sobre nosotros</a>
+      <a class="navegacion__enlace cerrar-nav" [ngClass]="{'cerrar-nav-active':open}" (click)="cerrarTodo()">
+        <img class="cerrar-nav-img" src="../../assets/arrow-bar-left.png" alt="cerrar">
+      </a>
+      <a class="navegacion__enlace " routerLink="/productos" routerLinkActive="active" (click)="cerrarTodo()">Tienda</a>
+      <a class="navegacion__enlace " routerLink="/sobrenosotros" routerLinkActive="active" (click)="cerrarTodo()">Sobre nosotros</a>
       <!-- <a  class="navegacion__enlace" routerLink="/contacto" routerLinkActive="active">CONTACTO</a> -->
     </nav>
   </div>

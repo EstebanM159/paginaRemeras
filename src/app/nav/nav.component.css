@@ -24,7 +24,7 @@
 .nav-container{
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   gap: 1rem;
 }
 .navegacion {
@@ -40,7 +40,7 @@
     right: 0;
     background-color: #000;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: width 0.5s;
   }
 .navegacion-open{
   padding: 3rem 2rem;
@@ -52,6 +52,7 @@
   color: var(--blanco);
   font-size: 3rem;
   line-height: 3rem;
+  text-wrap: nowrap;
 }
 
 nav a.active,
@@ -65,15 +66,18 @@ nav a.active,
   border: none;
   width: 3rem;
 }
-.nav-button img{
+.nav-button-img{
+  display: block;
   filter: invert();
+  width: 3rem;
+
 }
 .cerrar-nav{
   display: none;
   text-align: end;
   list-style: 0;
 }
-.cerrar-nav img{
+.cerrar-nav-img{
   width: 3rem;
   filter: invert();
 }
@@ -84,12 +88,16 @@ nav a.active,
   .nav-button{
     display: none;
   }
+  .nav-container{
+    align-items: center;
+    width: 100%;
+  }
   .navegacion {
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
     position: initial;
-    display: flex;
-    width: 100%;
+    /* width: 100%; */
     overflow: inherit;
   }
 }
@@ -103,6 +111,7 @@ nav a.active,
 }
 .cart-button-img {
   filter: invert();
+  width: 3rem;
 }
 .cart-button-active{
   filter: contrast(0.5);

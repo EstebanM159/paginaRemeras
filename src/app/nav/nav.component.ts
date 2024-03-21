@@ -32,7 +32,5 @@ export class NavComponent {
         this.banderaCambiada.emit(this.banderaDisabled=false)
         this.open=!this.open;
     }
-
-
   }
 
